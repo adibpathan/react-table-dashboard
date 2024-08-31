@@ -1,4 +1,4 @@
- *{
+* {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -6,116 +6,110 @@
 }
 
 .table-container {
-    max-width: 100%;
-    overflow-x: auto;
-    margin-top: 20px;
-  }
-  
-  .row{
-    text-align: center;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    background-color: #fff;
-  }
-  
-  th, td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  th {
-    background-color: #f4f4f4;
-    cursor: pointer;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
-  
-  th.sortable:hover {
-    background-color: #e2e2e2;
-  }
-  
-  td {
-    background-color: #fff;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  tr:hover {
-    background-color: #f1f1f1;
-  }
-  
-  .global-filter {
-    padding: 7px 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    width: 100%;
-    box-sizing: border-box;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    outline: none;
-  }
-  
-  .pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 40px 50px;
-    gap: 10px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .pagination button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    margin: 0 5px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .pagination button:hover {
-    background-color: #0056b3;
-  }
-  
-  .pagination button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-  
-  .pagination span {
-    font-size: 16px;
-    margin: 0 10px;
-  }
-  
-  .pagination input {
-    width: 60px;
-    padding: 5px;
-    border: 1px solid #007bff;
-    border-radius: 4px;
-    font-size: 14px;
-  }
-  
-  .pagination select {
-    padding: 6px;
-    border: 1px solid #007bff;
-    border-radius: 4px;
-    font-size: 14px;
-  } 
-  
+  max-width: 100%;
+  overflow-x: auto; /* Allows horizontal scrolling if content overflows */
+  margin-top: 20px;
+}
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
 
+th, td {
+  padding: 12px; /* Adjust the padding as needed */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden; /* Hides overflowing content */
+  text-overflow: ellipsis; /* Shows ellipsis (...) for clipped text */
+  white-space: nowrap; /* Prevents text from wrapping */
+}
 
-  
+th {
+  background-color: #f4f4f4;
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding-top: 14px; /* Extra space at the top */
+  padding-bottom: 14px; /* Extra space at the bottom */
+}
 
+th.sortable:hover {
+  background-color: #e2e2e2;
+}
 
-   
+td {
+  background-color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.global-filter {
+  padding: 7px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  outline: none;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 40px 50px;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 0 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.pagination input {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.pagination select {
+  padding: 6px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  font-size: 14px;
+}
