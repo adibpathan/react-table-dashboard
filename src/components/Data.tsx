@@ -62,7 +62,7 @@ export const columns: Column[] = [
     Header: 'Status',
     accessor: 'status',
     Filter: TextFilter,
-  },
+  }
 
 ];
 
